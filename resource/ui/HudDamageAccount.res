@@ -9,10 +9,10 @@
 		"text_y"				"0"
 		"delta_item_end_y"		"0"
 		"PositiveColor"			"0 255 0 255"
-		"NegativeColor"			"255 255 255 255"		//white
+		"NegativeColor"			"255 165 0 255"		//orange
 		"delta_lifetime"		"1.5"
-		"delta_item_font"		"HudFontSmallish"		
-		"delta_item_font_big"	"HudFontMedium"	
+		"delta_item_font"		"HudFontMediumSmallBold"		
+		"delta_item_font_big"	"HudFontMediumBold"	
 		"visible"				"1"
 	}
 	
@@ -29,7 +29,7 @@
 		"enabled"		"1"
 		"labelText"		"%metal%"
 		"textAlignment"	"east"
-		"fgcolor"		"255 255 255 255"		//white
+		"fgcolor"		"255 165 0 255"		//orange
 		"font"			"HudFontBiggerBold"
 	}	
 	"DamageAccountValueShadowEve"

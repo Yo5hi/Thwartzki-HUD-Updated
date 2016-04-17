@@ -25,6 +25,13 @@ Scheme
 		"GoalOrange"		"255 133 0"
 		"TFOrange"			"145 73 59 255"
 		
+		"QuestGold"			"208 147 75 255"
+		"HalloweenThemeColor2015_Light"	"238 126 17 255"
+		"HalloweenThemeColor2015"		"135 54 16 255"
+		"HalloweenThemeColor2015_Dark"	"108 49 21 255"
+		"QuestStandardHighlight"	"0 255 0 255"
+		"QuestBonusHighlight"		"150 160 255 255"
+		
 		"White"				"235 235 235 255"
 		"Red"				"192 28 0 140"
 		"RedSolid"			"192 28 0 255"
@@ -116,6 +123,7 @@ Scheme
 		"ItemBundleItem"						"149 175 12 255"
 		"ItemLimitedUse"						"0 160 0 255"
 		"ItemFlags"								"117 107 94 255"
+		"ItemLimitedQuantity"					"225 209 0 255"
 		
 		"QualityColorNormal"					"235 235 235 255"//"178 178 178 255"
 		"QualityColorrarity1"					"77 116 85 255"
@@ -130,31 +138,17 @@ Scheme
 		"QualityColorCustomized"				"71 98 145 255"
 		"QualityColorStrange"					"207 106 50 255"
 		"QualityColorCompleted"					"134 80 172 255"
-		"QualityColorHaunted"					"134 80 172 255"
+		"QualityColorHaunted"					"56 243 171 255"
+		"QualityColorCollectors"				"170 0 0 255"
+		"QualityColorPaintkitWeapon"			"250 250 250 255"
 		
-		"ItemRarityDefault"                                                "131 126 119 255"
-        "ItemRarityCommon"                                                "176 195 217 255"
-        "ItemRarityUncommon"                                        "94 152 217 255"
-        "ItemRarityRare"                                                "75 105 255 255"
-        "ItemRarityMythical"                                        "136 71 255 255"
-        "ItemRarityLegendary"                                        "211 44 230 255"
-        "ItemRarityAncient"                                                "235 75 75 255"
-        "ItemRarityDefault_GreyedOut"                        "44 42 40 255"
-        "ItemRarityCommon_GreyedOut"                        "59 65 72 255"
-        "ItemRarityUncommon_GreyedOut"                        "31 50 72 255"
-        "ItemRarityRare_GreyedOut"                                "25 35 85 255"
-        "ItemRarityMythical_GreyedOut"                        "45 24 85 255"
-        "ItemRarityLegendary_GreyedOut"                        "70 15 77 255"
-        "ItemRarityAncient_GreyedOut"                        "78 25 25 255"
-		"QualityColorPaintkitWeapon_GreyedOut"        "60 60 60 255"
-		"QuestGold"                        "208 147 75 255"
-		"HalloweenThemeColor2015_Light"	"238 126 17 255"
-		"HalloweenThemeColor2015"		"135 54 16 255"
-		"HalloweenThemeColor2015_Dark"	"108 49 21 255"
-		"QuestStandardHighlight"	"0 255 0 255"
-		"QuestBonusHighlight"		"150 160 255 255"
-		
-		
+		"ItemRarityDefault"						"131 126 119 255"
+		"ItemRarityCommon"						"176 195 217 255"
+		"ItemRarityUncommon"					"94 152 217 255"
+		"ItemRarityRare"						"75 105 255 255"
+		"ItemRarityMythical"					"136 71 255 255"
+		"ItemRarityLegendary"					"211 44 230 255"
+		"ItemRarityAncient"						"235 75 75 255"		
 		
 		"SaleGreen"								"76 107 34 255"
 		
@@ -1676,6 +1670,30 @@ Scheme
 				"additive"	"0"
 			}
 		}
+		"ScoreboardTeamCountNew"
+		{
+			"1"
+			{
+				"name"		"TF2 Secondary"
+				"tall"		"14"
+				"weight"	"500"
+				"range"		"0x0000 0x007F"	//	Basic Latin
+				"antialias" "1"
+				"additive"	"0"
+			}
+		}
+		"ScoreboardTeamNameNew"
+		{
+			"1"
+			{
+				"name"		"TF2 Secondary"
+				"tall"		"20"
+				"weight"	"500"
+				"range"		"0x0000 0x007F"	//	Basic Latin
+				"antialias" "1"
+				"additive"	"0"
+			}
+		}
 		"ScoreboardTeamNameLarge"
 		{
 			"1"
@@ -1686,6 +1704,18 @@ Scheme
 				"range"		"0x0000 0x007F"	//	Basic Latin
 				"antialias" "1"
 				"additive"	"0"
+			}
+		}
+		"ScoreboardTeamScoreNew"
+ 		{
+			"1"
+			{
+				"name"		"TF2"
+				"tall"		"36"
+				"tall_hidef"	"48"
+				"weight"	"500"
+				"additive"	"0"
+				"antialias" "1"
 			}
 		}
 
@@ -1739,7 +1769,40 @@ Scheme
 				"antialias" "1"
 			}
 		}
-		
+		"MatchSummaryTeamScores"
+		{
+			"1"
+			{
+				"name"		"TF2"
+				"tall"		"36"
+				"weight"	"500"
+				"range"		"0x0000 0x007F"	//	Basic Latin
+				"antialias" "1"
+				"additive"	"0"
+			}
+		}
+		"MatchSummaryStatsAndMedals"
+		{
+			"1"
+			{
+				"name"		"TF2 Secondary"
+				"tall"		"14"
+				"weight"	"400"
+				"additive"	"0"
+				"antialias" "1"
+			}
+		}
+		"CompMatchStartTeamNames"
+		{
+			"1"
+			{
+				"name"		"TF2 Secondary"
+				"tall"		"14"
+				"weight"	"400"
+				"additive"	"0"
+				"antialias" "1"
+			}
+		}	
 		"ControlPointTimer"
 		{
 			"1"
@@ -2972,18 +3035,40 @@ Scheme
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
 			
-			"image"					"../hud/color_panel_red"
-			"src_corner_height"		"23"				// pixels inside the image
-			"src_corner_width"		"23"
-			"draw_corner_width"		"5"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"5"	
+			"image"					"../HUD/tournament_panel_red"
+			"src_corner_height"		"40"				// pixels inside the image
+			"src_corner_width"		"40"
+			"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"0"	
 		}
 		TFFatLineBorderBlueBG
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
 			
-			"image"					"../hud/color_panel_blu"
+			"image"					"../HUD/tournament_panel_blu"
+			"src_corner_height"		"40"				// pixels inside the image
+			"src_corner_width"		"40"
+			"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"0"	
+		}
+		TFFatLineBorderBlueBGOpaque
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"../hud/color_panel_blu_opaque"
+			"src_corner_height"		"23"				// pixels inside the image
+			"src_corner_width"		"23"
+			"draw_corner_width"		"5"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"5"	
+		}
+		TFFatLineBorderClearBG
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"../hud/color_panel_clear"
 			"src_corner_height"		"23"				// pixels inside the image
 			"src_corner_width"		"23"
 			"draw_corner_width"		"5"				// screen size of the corners ( and sides ), proportional
@@ -4478,6 +4563,42 @@ Scheme
 		}
 		ReplayBrowser.ScrollBar.SliderButton.Border
 		{
+		}
+		
+		QuestStatusBorder
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"replay/panel_scalable_transparent"
+			"src_corner_height"		"23"			// pixels inside the image
+			"src_corner_width"		"23"
+			"draw_corner_width"		"7"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"7"	
+		}
+
+		RedWithThinBorder
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"../hud/panel_scalable_red"
+			"src_corner_height"		"23"			// pixels inside the image
+			"src_corner_width"		"23"
+			"draw_corner_width"		"7"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"7"	
+		}
+
+		BlueWithThinBorder
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"../hud/panel_scalable_blue"
+			"src_corner_height"		"23"			// pixels inside the image
+			"src_corner_width"		"23"
+			"draw_corner_width"		"7"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"7"	
 		}
 	}
 

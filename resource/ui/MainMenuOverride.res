@@ -211,6 +211,10 @@
 		{
 			"image"		"../console/title_invasion"
 		}
+		if_operation
+		{
+			"image"		"../console/title_team_tough_break"
+		}
 	}
 					
 	"TFLogoImage"
@@ -454,6 +458,68 @@
 		}		
 	}
 	
+	"CompMiniButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"CompMiniButton"
+		"xpos"			"309"//"329"
+		"ypos"			"183"
+		"zpos"			"30"
+		"wide"			"20"
+		"tall"			"20"
+		"visible"		"1"
+		
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"20"
+			"tall"			"20"
+			"autoResize"	"0"
+			"pinCorner"		"3"
+			"visible"		"1"
+			"enabled"		"1"
+			"tabPosition"	"0"
+			"textinsetx"	"100"
+			"use_proportional_insets" "1"
+			"font"			"HudFontSmallBold"
+			"textAlignment"	"west"
+			"dulltext"		"0"
+			"brighttext"	"0"
+			"default"		"1"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			
+			"border_default"	"MainMenuMiniButtonDefault"
+			"border_armed"		"MainMenuMiniButtonArmed"
+			"paintbackground"	"0"
+			
+			"defaultFgColor_override" "46 43 42 255"
+			"armedFgColor_override" "46 43 42 255"
+			"depressedFgColor_override" "46 43 42 255"
+			
+			"image_drawcolor"	"235 226 202 255"
+			"image_armedcolor"	"235 226 202 255"
+			
+			"SubImage"
+			{
+				"ControlName"	"ImagePanel"
+				"fieldName"		"SubImage"
+				"xpos"			"4"
+				"ypos"			"4"
+				"zpos"			"1"
+				"wide"			"12"
+				"tall"			"12"
+				"visible"		"1"
+				"enabled"		"1"
+				"image" 		"../hud/leaderboard_nemesis"
+				"scaleImage"	"1"
+			}				
+		}		
+	}
+	
 	
 	
 	"QuickPlayMiniButton"
@@ -639,13 +705,104 @@
 				"scaleImage"	"1"
 			}				
 		}		
-	}	
+	}
+
+	"WatchStreamButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"WatchStreamButton"
+		"xpos"			"r135"
+		"ypos"			"48"
+		"zpos"			"1"
+		"wide"			"32"
+		"tall"			"32"
+		"autoResize"	"0"
+		"pinCorner"		"3"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		
+		"navUp"			"Notifications_Panel"
+		"navLeft"		"SettingsButton"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"f0"
+			"tall"			"f0"
+			"autoResize"	"0"
+			"pinCorner"		"3"
+			"visible"		"1"
+			"enabled"		"1"
+			"tabPosition"	"0"
+			"textinsetx"	"25"
+			"labelText"		""
+			"use_proportional_insets" "1"
+			"font"			"HudFontSmallBold"
+			"command"		"watch_stream"
+			"textAlignment"	"west"
+			"dulltext"		"0"
+			"brighttext"	"0"
+			"default"		"1"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"vo/null.mp3"
+			"actionsignallevel" "2"
+			"proportionaltoparent"	"1"
+				
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			"paintbackground"	"0"
+			"paintborder"		"0"
+			"image_drawcolor"	"235 226 202 255"
+			"image_armedcolor"	"255 255 255 255"
+
+			"SubImage"
+			{
+				"ControlName"	"ImagePanel"
+				"fieldName"		"SubImage"
+				"xpos"			"cs-0.5"
+				"ypos"			"cs-0.5"
+				"zpos"			"1"
+				"wide"			"f0"
+				"tall"			"f0"
+				"visible"		"1"
+				"enabled"		"1"
+				"scaleImage"	"1"
+				"image"			"button_streaming"
+
+				"proportionaltoparent"	"1"
+				"mouseinputenabled"	"0"
+				"keyboardinputenabled" "0"
+			}		
+		}
+	}
+
+	"StreamListPanel"
+	{
+		"ControlName"	"CTFStreamListPanel"
+		"fieldName"		"StreamListPanel"
+		"xpos"			"c5"
+		"ypos"			"65"
+		"zpos"			"1"
+		"wide"			"300"
+		"tall"			"350"
+		"visible"		"0"
+		"PaintBackgroundType"	"2"
+		"paintbackground"	"0"
+		"border"		"MainMenuHighlightBorder"
+
+		"navDown"		"SettingsButton"		// when a sub element can't nav down it will pass through this
+		"navLeft"		"WatchStreamButton"	// when a sub element can't nav left it will pass through this
+	}
 
 	"QuestLogButton"
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"QuestLogButton"
-		"xpos"			"r170"//"c200"
+		"xpos"			"r65"//"c200"
 		"ypos"			"48"
 		"zpos"			"1"
 		"wide"			"32"
@@ -1179,7 +1336,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"Notifications_ShowButtonPanel"
-		"xpos"			"r135"//"r235"//"c165"
+		"xpos"			"r170"//"r235"//"c165"
 		"ypos"			"48"
 		"zpos"			"1"
 		"wide"			"32"
@@ -3644,10 +3801,10 @@
 				"fieldName"		"OperationTitleLabel"
 				"font"			"HudFontSmallBold"
 				"labelText"		"#MMenu_Update"
-				"textAlignment"	"west"
-				"xpos"			"0"
+				"textAlignment"	"center"
+				"xpos"			"p0.05"
 				"ypos"			"0"
-				"wide"			"f0"
+				"wide"			"p0.9"
 				"tall"			"30"
 				"autoResize"	"0"
 				"pinCorner"		"0"
@@ -3655,13 +3812,14 @@
 				"enabled"		"1"
 				"textinsetx"	"20"
 				"fgcolor_override"	"235 227 203 255"
+				"proportionaltoparent"	"1"
 			}
 
 			"ViewDetailsButton"
 			{
 				"ControlName"	"EditablePanel"
 				"fieldname"		"ViewDetailsButton"
-				"xpos"			"p0.02"
+				"xpos"			"p0.25"
 				"ypos"			"27"
 				"zpos"			"11"
 				"wide"			"p0.48"
@@ -3718,7 +3876,7 @@
 				"zpos"			"11"
 				"wide"			"p0.48"
 				"tall"			"26"
-				"visible"		"1"
+				"visible"		"0"
 				"PaintBackgroundType"	"0"
 				"proportionaltoparent"	"1"
 
@@ -3781,23 +3939,40 @@
 				{
 					"0"
 					{
-						"item"		"Halloween 2015 Key"
+						"item"		 	"Unused Operation Tough Break Pass"
 						"show_market"	"0"
 					}
 					"1"
 					{
-						"item"		"Halloween 2015 case"
+						"item"		"Tough Break Case 01 Pyroland"
+						"show_market"	"1"
 					}
 					"2"
 					{
-						"item"		"Taunt: Zoomin' Broom"
-						"show_market"	"0"
+						"item"		"Tough Break Case 02 Warbirds"
+						"show_market"	"1"
 					}
 					"3"
 					{
-						"item"		"Taunt: Soldier's Requiem"
+						"item"		"Tough Break Key"
 						"show_market"	"0"
 					}
+					"4"
+					{
+						"item"		"Tough Break Cosmetic Case"
+						"show_market"	"1"
+					}
+					"5"
+					{
+						"item"		"Tough Break Cosmetic Key"
+						"show_market"	"0"
+					}
+					"5"
+					{
+						"item"		"Taunt: Aerobic Taunt"
+						"show_market"	"0"
+					}
+					
 				}
 			}
 
@@ -3826,4 +4001,35 @@
 
 	} // EventPromo
 
+	"icon_generator"
+	{
+		"ControlName"		"CEmbeddedItemModelPanel"
+		"fieldName"		"icon_generator"
+
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"1"		
+		"wide"			"300"
+		"tall"			"300"
+		"autoResize"		"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"useparentbg"		"1"
+	
+		"inset_eq_x"	"2"
+		"inset_eq_y"	"2"
+
+		"fov"			"54"
+		"start_framed"		"1"
+
+		"disable_manipulation"	"1"
+
+		"model"
+		{
+			"angles_x"		"10"
+			"angles_y"		"130"
+			"angles_z"		"0"
+		}
+	}
 }

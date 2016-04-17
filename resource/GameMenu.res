@@ -23,6 +23,13 @@
 		"tooltip" "CO-OP"//"Mann vs Machine"
 	}
 	
+	"CompMiniButton"
+	{
+		"command" "ladder_ui_show"
+		"OnlyAtMenu" "0"
+		"tooltip" "COMPETITIVE"//"Matchmaking"
+	}
+	
 	"QuickPlayMiniButton"
 	{
 		"command" "quickplay"

@@ -19,7 +19,13 @@
 		"src_corner_height"		"40"
 		"src_corner_width"		"40"			
 		"draw_corner_width"		"0"
-		"draw_corner_height" 	"0"	
+		"draw_corner_height" 	"0"
+
+		if_comp
+		{
+			"xpos"		"9999"
+			"visible"	"0"
+		}
 	}
 	
 	"TimePanelBGThwartski"
@@ -35,6 +41,12 @@
 		"enabled"			"1"
 		"scaleImage"		"1"	
 		"fillcolor"			"0 0 0 255"	
+		
+		if_comp
+		{
+			"xpos"		"9999"
+			"visible"	"0"
+		}
 	}
 	
 	"TimePanelProgressBar"

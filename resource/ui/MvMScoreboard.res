@@ -124,6 +124,7 @@
 		"autoresize"	"3"
 		"linespacing"	"22"
 		"textcolor"		"White"
+		"medal_width"	"0"
 	}
 	
 	"CreditStatsContainer"

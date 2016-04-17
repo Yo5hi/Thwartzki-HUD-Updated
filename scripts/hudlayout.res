@@ -1230,6 +1230,18 @@
 		"tall"			"0"
 	}
 	
+	HudSpellMenu
+	{
+		"fieldName" "HudSpellMenu"
+		"visible" "1"
+		"enabled" "1"
+		"wide"	 "f0"
+		"tall"	 "480"
+		"zpos" 	"2"
+		"xpos"			"0"
+		"ypos"			"0"
+	}
+	
 	"CHudVote"
 	{
 		"fieldName"		"CHudVote"
@@ -1242,7 +1254,7 @@
 		"bgcolor_override"	"0 0 0 0"
 		"PaintBackgroundType"	"0" // rounded corners
 	}
-		"HudMenuTauntSelection"
+	"HudMenuTauntSelection"
 	{
 		"fieldName"		"HudMenuTauntSelection"
 		"visible"		"1"
@@ -1253,7 +1265,7 @@
 		"tall"			"480"
 	}
 	
-		"HudMiniGame"
+	"HudMiniGame"
 	{
 		"fieldName" "HudMiniGame"
 		"visible" "1"
@@ -1264,17 +1276,87 @@
 		"tall"	"480"
 	}
 	
-		HudSpellMenu
+	"QuestNotificationPanel"
 	{
-		"fieldName" "HudSpellMenu"
+		"fieldName"	"QuestNotificationPanel"
 		"visible" "1"
 		"enabled" "1"
-		"wide"	 "f0"
-		"tall"	 "480"
-		"zpos" 	"2"
+		"xpos"	"0"
+		"ypos"	"0"
+		"wide"	"f0"
+		"tall"	"f0"
+	}
+
+	"QuestLogContainer"
+	{
+		"ControlName"		"EditablePanel"
+		"fieldName" 		"QuestLogContainer"
+		"visible" 		"1"
+		"enabled" 		"1"
 		"xpos"			"0"
 		"ypos"			"0"
+		"wide"	 		"f0"
+		"tall"	 		"f0"
 	}
+
+	"MatchMakingContainer"
+	{
+		"ControlName"		"EditablePanel"
+		"fieldName" 		"MatchMakingContainer"
+		"visible" 		"1"
+		"enabled" 		"1"
+		"xpos"			"0"
+		"ypos"			"0"
+		"wide"	 		"f0"
+		"tall"	 		"f0"
+	}
+
+	HudSpectatorExtras
+	{
+		"fieldName" "HudSpectatorExtras"
+		"visible" "1"
+		"enabled" "1"
+		"xpos"	"0"
+		"ypos"	"0"
+		"wide"	"f0"
+		"tall"	"f0"
+	}
+
+	MatchSummary
+	{
+		"fieldName" "MatchSummary"
+		"visible" "0"
+		"enabled" "1"
+		"xpos"	"0"
+		"ypos"	"0"
+		"wide"	"f0"
+		"tall"	"f0"
+	}
+
+	HudMatchStatus
+	{
+		"fieldName"				"HudMatchStatus"
+		"visible"				"1"
+		"enabled"				"1"
+		"xpos"					"0"
+		"ypos"					"0"
+		"zpos"					"2"
+		"wide"					"f0"
+		"tall"					"f0"
+	}
+
+	HudTeamStatus
+	{
+		"fieldName"				"HudTeamStatus"
+		"visible"				"1"
+		"enabled"				"1"
+		"xpos"					"0"
+		"ypos"					"0"
+		"zpos"					"2"
+		"wide"					"f0"
+		"tall"					"150"
+	}
+	
 	ThinCircle
 	{
 		"controlName"	"CExLabel"
@@ -1300,7 +1382,7 @@
 		"controlName"	"CExLabel"
 		"fieldName"	 	"CircleDot"
 		"visible"		"0"
-		"enabled"		"0"
+		"enabled"		"1"
 		"zpos"			"2"
 
 		"xpos"			"c-100"
@@ -1313,7 +1395,7 @@
 		"labelText"		"8"
 		"textAlignment"	"center"	
 		
-		"fgcolor"		"255 255 255 255"
+		"fgcolor"		"0 255 0 255"
 	}
 	WingsPlus
 	{
@@ -1375,154 +1457,5 @@
 		
 		"fgcolor"		"255 255 255 255"
 	}
-	//fighter pilot crosshair, enable all of then together for best results (16x9 resolution)
-	
-	"16x9Crosshair_vertical1"
-	{
-		"ControlName"		"ImagePanel"
-		"fieldName"		"VerticalLine"
-		"xpos"			"427"
-		"xpos_lodef"	"279"
-		"xpos_hidef"	"309"
-		"ypos"			"75"
-		"zpos"			"-5"
-		"wide"			"1"
-		"tall"			"154"
-		"tall_lodef"	"206"
-		"tall_hidef"	"212"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"0"
-		"enabled"		"0"
-		"fillcolor"		"255 255 255 255"
-		"alpha" "50"
-	}
-
-	"16x9Crosshair_horizontal1"
-	{
-		"ControlName"		"ImagePanel"
-		"fieldName"		"VerticalLine"
-		"xpos"			"40"
-		"xpos_lodef"	"279"
-		"xpos_hidef"	"309"
-		"ypos"			"240"
-		"zpos"			"-5"
-		"wide"			"374"
-		"tall"			"1"
-		"tall_lodef"	"206"
-		"tall_hidef"	"212"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"0"
-		"enabled"		"0"
-		"fillcolor"		"255 255 255 255"
-		"alpha" "50"
-	}
-	
-	"16x9Crosshair_horizontal2"
-	{
-		"ControlName"		"ImagePanel"
-		"fieldName"		"VerticalLine"
-		"xpos"			"439"
-		"xpos_lodef"	"279"
-		"xpos_hidef"	"309"
-		"ypos"			"240"
-		"zpos"			"-5"
-		"wide"			"374"
-		"tall"			"1"
-		"tall_lodef"	"206"
-		"tall_hidef"	"212"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"0"
-		"enabled"		"0"
-		"fillcolor"		"255 255 255 255"
-		"alpha" "50"
-	}
-
-	"16x9dark_top"
-	{
-		"ControlName"		"ImagePanel"
-		"fieldName"		"VerticalLine"
-		"xpos"			"426"
-		"xpos_lodef"	"278"
-		"xpos_hidef"	"308"
-		"ypos"			"190"
-		"zpos"			"-5"
-		"wide"			""
-		"tall"			"38"
-		"tall_lodef"	"206"
-		"tall_hidef"	"212"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"0"
-		"enabled"		"0"
-		"fillcolor"		"255 255 255 255"
-		"alpha" "100"
-	}
-	"16x9dark_bottom"
-	{
-		"ControlName"		"ImagePanel"
-		"fieldName"		"VerticalLine"
-		"xpos"			"427"
-		"xpos_lodef"	"279"
-		"xpos_hidef"	"309"
-		"ypos"			"252"
-		"zpos"			"-5"
-		"wide"			"1"
-		"tall"			"38"
-		"tall_lodef"	"206"
-		"tall_hidef"	"212"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"0"
-		"enabled"		"0"
-		"fillcolor"		"255 255 255 255"
-		"alpha" "150"
-	}
-	"16x9dark_left"
-	{
-		"ControlName"		"ImagePanel"
-		"fieldName"		"VerticalLine"
-		"xpos"			"365"
-		"xpos_lodef"	"279"
-		"xpos_hidef"	"309"
-		"ypos"			"240"
-		"zpos"			"-5"
-		"wide"			"50"
-		"tall"			"1"
-		"tall_lodef"	"206"
-		"tall_hidef"	"212"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"0"
-		"enabled"		"0"
-		"fillcolor"		"255 255 255 255"
-		"alpha" "100"
-	}
-	
-
-	"16x9dark_right"
-	{
-		"ControlName"		"ImagePanel"
-		"fieldName"		"VerticalLine"
-		"xpos"			"439"
-		"xpos_lodef"	"279"
-		"xpos_hidef"	"309"
-		"ypos"			"240"
-		"zpos"			"-5"
-		"wide"			"50"
-		"tall"			"1"
-		"tall_lodef"	"206"
-		"tall_hidef"	"212"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"0"
-		"enabled"		"0"
-		"fillcolor"		"255 255 255 255"
-		"alpha" "100"
-	}
-	
-	//end fighter pilot crosshair (16x9)
 }
 }
