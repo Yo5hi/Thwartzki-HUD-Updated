@@ -11,8 +11,8 @@
 		"PositiveColor"			"0 255 0 255"
 		"NegativeColor"			"255 165 0 255"		//orange
 		"delta_lifetime"		"1.5"
-		"delta_item_font"		"HudFontMediumSmallBold"		
-		"delta_item_font_big"	"HudFontMediumBold"	
+		"delta_item_font"		"HudFontSmallish"		
+		"delta_item_font_big"	"HudFontMedium"	
 		"visible"				"1"
 	}
 	
