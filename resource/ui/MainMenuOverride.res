@@ -211,10 +211,10 @@
 		{
 			"image"		"../console/title_invasion"
 		}
-		if_operation
-		{
-			"image"		"../console/title_team_tough_break"
-		}
+//		if_operation
+//		{
+//			"image"		"../console/title_team_tough_break"
+//		}
 	}
 					
 	"TFLogoImage"
@@ -784,15 +784,16 @@
 	{
 		"ControlName"	"CTFStreamListPanel"
 		"fieldName"		"StreamListPanel"
-		"xpos"			"c5"
+		"xpos"			"c-10"
 		"ypos"			"65"
 		"zpos"			"1"
 		"wide"			"300"
 		"tall"			"350"
 		"visible"		"0"
 		"PaintBackgroundType"	"2"
-		"paintbackground"	"0"
+		"paintbackground"	"1"
 		"border"		"MainMenuHighlightBorder"
+		"bgcolor_override"	"46 43 42 255"
 
 		"navDown"		"SettingsButton"		// when a sub element can't nav down it will pass through this
 		"navLeft"		"WatchStreamButton"	// when a sub element can't nav left it will pass through this
@@ -3753,8 +3754,8 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"EventPromo"
-		"xpos"			"c0"
-		"ypos"			"0"
+		"xpos"			"9999"
+		"ypos"			"9999"
 		"zpos"			"-60"
 		"wide"			"320"
 		"tall"			"f0"
